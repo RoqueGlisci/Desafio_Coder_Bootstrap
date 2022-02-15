@@ -252,7 +252,7 @@ img{
 } */
 
 /* ----------------------Contacto--------------------------- */
-.input_check{
+/* .input_check{
     width: 2rem;
     height: 2rem;
     margin: 2rem 50%  2rem 50%;
@@ -264,12 +264,12 @@ img{
     margin: 1rem;
 }
 
-/* select{
+select{
     width: 20rem;
     height: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-} */
+}
 
 .text_area{
     width: 20rem;
@@ -324,7 +324,7 @@ img{
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
-}
+} */
 
 /* ------------------historia-------------------- */
 
