@@ -197,6 +197,32 @@ table{
 
 /* --------------------Animaciones-------------------------- */
 
+.footer_ani{
+    background-color: #148DD9;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-duration: alternate;
+}
+@keyframes un_efecto{
+    0%{
+        background-color: #148DD9;
+    }
+    25%{
+        background-color: #F20F38;
+    }
+    50%{
+        background-color: #F2E30F;
+    }
+    75%{
+        background-color: #04BFAD;
+    }
+    100%{
+        background-color: #148DD9;
+    }
+}
+
 
 /* -------------------------------------- */
 
