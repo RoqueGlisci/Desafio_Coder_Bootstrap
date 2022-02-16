@@ -19,7 +19,7 @@ body{
     background-size: center;
 }
 
-/* --------------- */
+/* --------------------------------------------------------- */
 
 .title{
     /* background-position: right; */
@@ -103,6 +103,26 @@ p{
     overflow: auto;
 } */
 
+.pre{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+label{
+    color: white;
+}
+
+.recu{
+    border: 10px solid black;
+}
+
+footer{
+    /* margin: 1rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: space-evenly; */
+    background-color: #148DD9;
+}
+
 /* ----------------------Tabla------------------------- */
 
 th{
@@ -121,32 +141,62 @@ th{
     border-bottom: solid 1rem #148DD9;
     border-right: solid 1rem #148DD9;
 }
-/* --------------------------------------------------- */
 
-label{
-    color: white;
-}
+/* ---------------------Noticias------------------------- */
 
-footer{
-    /* margin: 1rem 0rem 1rem 0rem;
-    display: flex;
-    justify-content: space-evenly; */
-    background-color: #148DD9;
-}
-
-.recu{
+.card{
+    background-color: #042159;
     border: 10px solid black;
 }
 
+/* ---------------- Nav --------------------- */
 
+@media (max-width: 1200px) {
+    .flex_res{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* ------------------Integrantes------------------ */
+
+table{
+    grid-area: table;
+}
+
+.inte{
+    margin: 2rem 6rem 2rem 6rem;
+    padding: 2rem 2rem 2rem 2rem;
+    border: 10px solid black;
+}
+
+@media screen and (min-width: 480px){
+    .sec-table{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "div" "table" "article";
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .sec-table{
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: auto;
+        grid-template-areas: "div table article";
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+
+    }
+}
 
 
 /* -------------------------------------- */
 
-.pre{
-    max-width: 100%;
-    max-height: 100%;
-}
 /*
 iframe{
     max-width: 100%;
@@ -164,13 +214,6 @@ iframe{
 
 /* ----------------Index y Nav--------------------- */
 
-@media (max-width: 1200px) {
-    .flex_res{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 
 /* header{
@@ -232,10 +275,6 @@ img{
 
 /* ---------------------Noticias------------------------- */
 
-.card{
-    background-color: #042159;
-    border: 10px solid black;
-}
 
 /* .div_news{
     width: 35rem;
@@ -329,7 +368,7 @@ select{
 
 /* ------------------historia-------------------- */
 
-.iframe_historia{
+/* .iframe_historia{
     width: 50rem;
     height: 30rem;
 
@@ -369,38 +408,6 @@ iframe{
         grid-column-gap: 3rem;
         grid-row-gap: 3rem;
     }
-}
+} */
 
-/* ------------------Integrantes------------------ */
 
-table{
-    grid-area: table;
-}
-
-.inte{
-    margin: 2rem 6rem 2rem 6rem;
-    padding: 2rem 2rem 2rem 2rem;
-    border: 10px solid black;
-}
-
-@media screen and (min-width: 480px){
-    .sec-table{
-        display: grid;
-        grid-template-columns: 80%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "div" "table" "article";
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width: 1080px){
-    .sec-table{
-        display: grid;
-        grid-template-columns: 30% 40% 30%;
-        grid-template-rows: auto;
-        grid-template-areas: "div table article";
-        grid-column-gap: 3rem;
-        grid-row-gap: 3rem;
-
-    }
-}
