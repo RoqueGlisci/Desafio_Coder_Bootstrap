@@ -223,6 +223,16 @@ table{
     }
 }
 
+.menu_ani{
+    transition: all 1s;
+    
+}
+.menu_ani:hover{
+    /* border: solid 2px red; */
+    border-radius: 45%;
+    /* padding: 10px 10px 10px 10px; */
+    background-color: #F20F38;
+}
 
 /* -------------------------------------- */
 
