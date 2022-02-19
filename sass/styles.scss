@@ -1,0 +1,64 @@
+@import 'variables';
+
+
+html{
+    font-size: 62,5%;
+    box-sizing: border-box;
+    body{
+        background-image: url(../img/foto1.jpg);
+        background-color: $colourblue;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: center;
+    }
+}
+
+.menu_ani{
+    transition: all 1s;
+    &:hover{
+        border-radius: $borderR;
+        background-color: $colourRed;
+    }   
+}
+
+header{
+    background-color: $colourLightblue;
+    font-family: $fontF1;
+    
+    h1{
+        font-family: $fontF1;
+        color: $colourWhite;        
+        font-size: $fontSizeH1;
+        font-family: $fontF1;
+    }
+}
+
+ul{
+
+    font-size: $fontSizeUl;
+    font-family: $fontF1;
+    border-bottom: $borderB;
+    list-style:none;
+    a{
+        color: $colourWhite;
+        text-decoration:none;
+        font-size: $fontSizeUl;
+    }
+}
+
+h2{
+    color: $colourWhite;
+    font-size: $fontSizeH2;
+    font-family: $fontF1;
+}
+
+h3{
+    color: $colourWhite;
+    font-size: $fontSizeH3;
+    font-family: $fontF1;
+}
+
+.recu{
+    border: $borderB;
+}
+
