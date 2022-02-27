@@ -111,9 +111,6 @@ label{
     color: white;
 }
 
-/* .recu{
-    border: 10px solid black;
-} */
 
 /* footer{ */
     /* margin: 1rem 0rem 1rem 0rem;
@@ -135,10 +132,10 @@ th{
 .tabla_info{
     background-color: #042159;
     margin: 4rem auto 2rem auto;
-    border-top: solid 1rem #148DD9;
+    /* border-top: solid 1rem #148DD9;
     border-left: solid 1rem #148DD9;
     border-bottom: solid 1rem #148DD9;
-    border-right: solid 1rem #148DD9;
+    border-right: solid 1rem #148DD9; */
 }
 
 /* ---------------------Noticias------------------------- */
@@ -167,8 +164,8 @@ table{
 
 .inte{
     margin: 2rem 6rem 2rem 6rem;
-    padding: 2rem 2rem 2rem 2rem;
-    border: 10px solid black;
+    padding: 2rem;
+    /* border: 10px solid black; */
 }
 
 @media screen and (min-width: 480px){

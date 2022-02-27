@@ -57,4 +57,34 @@ h3 {
   border: 10px solid black;
 }
 
+.recu1 {
+  border-width: 20px;
+  border-style: solid;
+  border-color: #F20F38;
+}
+
+.recu2 {
+  border-width: 20px;
+  border-style: solid;
+  border-color: #04BFAD;
+}
+
+.recu3 {
+  border-width: 20px;
+  border-style: solid;
+  border-color: #148DD9;
+}
+
+.recu4 {
+  border-width: 20px;
+  border-style: solid;
+  border-color: white;
+}
+
+@media (max-width: 1300px) {
+  p {
+    font-size: 0.8rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

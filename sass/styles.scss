@@ -62,3 +62,33 @@ h3{
     border: $borderB;
 }
 
+// ----------------------sass II-----------------------------------
+
+@mixin bordeColor($ancho, $tipo, $recu) {
+    border-width: $ancho;
+    border-style: $tipo;
+    border-color: $recu;
+}
+
+
+@if $crear == "si"{
+    @each $numero, $recu in $mapaColores{
+        .recu#{$numero}{
+            @include bordeColor(20px, solid, $recu);
+        }
+    }
+}
+@else{
+    div{
+        @extend .recu;
+    }
+}
+
+
+
+@media (max-width: 1300px){
+    p{
+        font-size: $fontSizeP;
+    }
+}
+
