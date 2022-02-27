@@ -84,6 +84,15 @@ h3{
     }
 }
 
+.nbot1{
+    background-color: map-get($mapaColores, 1);
+    
+}
+
+.nbot2{
+    background-color: map-get($mapaColores, 2);
+    
+}
 
 
 @media (max-width: 1300px){

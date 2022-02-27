@@ -81,6 +81,14 @@ h3 {
   border-color: white;
 }
 
+.nbot1 {
+  background-color: #F20F38;
+}
+
+.nbot2 {
+  background-color: #04BFAD;
+}
+
 @media (max-width: 1300px) {
   p {
     font-size: 0.8rem;
