@@ -1,4 +1,5 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap');
 
 
 html{
@@ -13,13 +14,6 @@ html{
     }
 }
 
-.menu_ani{
-    transition: all 1s;
-    &:hover{
-        border-radius: $borderR;
-        background-color: $colourRed;
-    }   
-}
 
 header{
     background-color: $colourLightblue;
@@ -44,6 +38,7 @@ ul{
         text-decoration:none;
         font-size: $fontSizeUl;
     }
+    
 }
 
 h2{
@@ -62,6 +57,86 @@ h3{
     border: $borderB;
 }
 
+p{
+    color: $colourWhite;
+    font-family: $fontF1;
+    font-weight: 700;
+    overflow: auto;
+}
+
+label{
+    color: $colourWhite;
+}
+
+/* ---------------- Nav --------------------- */
+
+@media (max-width: 1200px) {
+    .flex_res{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// ----------------------Tabla-------------------------
+
+.tabla_info{
+    background-color: $colourblue;
+    margin: 4rem auto 2rem auto;
+    padding: 1rem;
+    th{
+        color: $colourWhite;
+        width: 20rem;
+        height: 5rem;
+        font-size: $fontSizeTH;
+        font-family: $fontF1;
+    }
+}
+
+/* ---------------------Noticias------------------------- */
+
+.card{
+    background-color: $colourblue;
+    border: $borderB;
+}
+
+/* --------------------Animaciones-------------------------- */
+
+.footer_ani{
+    background-color: map-get($mapaColores, 3);
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-duration: alternate;
+}
+
+@keyframes un_efecto{
+    0%{
+        background-color: map-get($mapaColores, 3);
+    }
+    25%{
+        background-color: map-get($mapaColores, 1);
+    }
+    50%{
+        background-color: map-get($mapaColores, 6);
+    }
+    75%{
+        background-color: map-get($mapaColores, 2);
+    }
+    100%{
+        background-color: map-get($mapaColores, 3);
+    }
+}
+
+.menu_ani{
+    transition: all 1s;
+    &:hover{
+        border-radius: $borderR;
+        background-color: $colourRed;
+    }   
+}
+
 // ----------------------sass II-----------------------------------
 
 @mixin bordeColor($ancho, $tipo, $recu) {
@@ -74,7 +149,7 @@ h3{
 @if $crear == "si"{
     @each $numero, $recu in $mapaColores{
         .recu#{$numero}{
-            @include bordeColor(20px, solid, $recu);
+            @include bordeColor(10px, solid, $recu);
         }
     }
 }

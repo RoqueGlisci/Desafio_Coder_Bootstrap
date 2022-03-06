@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap'); */
+/* 
 * {
     margin: 0;
     padding: 0;
-}
+} */
 
 /* html{
     font-size: 62,5%;
@@ -30,19 +30,19 @@ body{
 
 /* } */
 
-.menu_section{
+/* .menu_section{
    margin: 1rem 0rem 1rem 0rem;
     background-color: #042159;
     display: flex;
     justify-content: space-evenly;
 
-}
+} */
 
-.subtitles{
+/* .subtitles{
     margin: 1rem 0rem 1rem 0rem;
     display: flex;
     justify-content: space-evenly;
-}
+} */
 
 /* ul{
 
@@ -58,9 +58,9 @@ a{
     font-size: 2rem;
 } */
 
-legend{
+/* legend{
     color: white;
-}
+} */
 
 /* h1{
     font-family: 'Mochiy Pop P One', sans-serif;
@@ -79,22 +79,22 @@ h3{
     font-family: 'Mochiy Pop P One', sans-serif;
 } */
 
-.h3_news{
+/* .h3_news{
     margin-bottom: 1rem;
-}
+} */
 
-p{
+/* p{
     color: white;
     font-family: 'Mochiy Pop P One', sans-serif;
     font-weight: 700;
     overflow: auto;
-}
+} */
 
-.p_news{
+/* .p_news{
     width: 30rem;
     height: 20rem;
-    /* overflow: auto; */
-}
+     overflow: auto;
+} */
 
 /* .p_index{
     width: 30rem;
@@ -102,14 +102,14 @@ p{
     overflow: auto;
 } */
 
-.pre{
+/* .pre{
     max-width: 100%;
     max-height: 100%;
-}
+} */
 
-label{
+/* label{
     color: white;
-}
+} */
 
 
 /* footer{ */
@@ -121,7 +121,7 @@ label{
 
 /* ----------------------Tabla------------------------- */
 
-th{
+/* th{
     color: white;
     width: 20rem;
     height: 5rem;
@@ -131,42 +131,42 @@ th{
 
 .tabla_info{
     background-color: #042159;
-    margin: 4rem auto 2rem auto;
+    margin: 4rem auto 2rem auto; */
     /* border-top: solid 1rem #148DD9;
     border-left: solid 1rem #148DD9;
     border-bottom: solid 1rem #148DD9;
     border-right: solid 1rem #148DD9; */
-}
+/* } */
 
 /* ---------------------Noticias------------------------- */
 
-.card{
+/* .card{
     background-color: #042159;
     border: 10px solid black;
-}
+} */
 
 /* ---------------- Nav --------------------- */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .flex_res{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-}
+} */
 
 
 /* ------------------Integrantes------------------ */
 
-table{
+/* table{
     grid-area: table;
 }
 
 .inte{
-    margin: 2rem 6rem 2rem 6rem;
-    padding: 2rem;
+    margin: 2rem;
+    padding: 2rem;  */
     /* border: 10px solid black; */
-}
+/* }
 
 @media screen and (min-width: 480px){
     .sec-table{
@@ -188,12 +188,12 @@ table{
         grid-row-gap: 3rem;
 
     }
-}
+} */
 
 
 /* --------------------Animaciones-------------------------- */
 
-.footer_ani{
+/* .footer_ani{
     background-color: #148DD9;
     animation-name: un_efecto;
     animation-iteration-count: infinite;
@@ -218,11 +218,11 @@ table{
     100%{
         background-color: #148DD9;
     }
-}
+} */
 
 /* .menu_ani{
     transition: all 1s;
-    
+
 }
 .menu_ani:hover{ */
     /* border: solid 2px red; */

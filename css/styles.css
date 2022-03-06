@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap");
 html {
   font-size: 62, 5%;
   box-sizing: border-box;
@@ -8,14 +9,6 @@ html body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: center;
-}
-
-.menu_ani {
-  transition: all 1s;
-}
-.menu_ani:hover {
-  border-radius: 45%;
-  background-color: #F20F38;
 }
 
 header {
@@ -57,28 +50,113 @@ h3 {
   border: 10px solid black;
 }
 
+p {
+  color: white;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: 700;
+  overflow: auto;
+}
+
+label {
+  color: white;
+}
+
+/* ---------------- Nav --------------------- */
+@media (max-width: 1200px) {
+  .flex_res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.tabla_info {
+  background-color: #042159;
+  margin: 4rem auto 2rem auto;
+  padding: 1rem;
+}
+.tabla_info th {
+  color: white;
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.2rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+/* ---------------------Noticias------------------------- */
+.card {
+  background-color: #042159;
+  border: 10px solid black;
+}
+
+/* --------------------Animaciones-------------------------- */
+.footer_ani {
+  background-color: #148DD9;
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-duration: alternate;
+}
+
+@keyframes un_efecto {
+  0% {
+    background-color: #148DD9;
+  }
+  25% {
+    background-color: #F20F38;
+  }
+  50% {
+    background-color: #F2E30F;
+  }
+  75% {
+    background-color: #04BFAD;
+  }
+  100% {
+    background-color: #148DD9;
+  }
+}
+.menu_ani {
+  transition: all 1s;
+}
+.menu_ani:hover {
+  border-radius: 45%;
+  background-color: #F20F38;
+}
+
 .recu1 {
-  border-width: 20px;
+  border-width: 10px;
   border-style: solid;
   border-color: #F20F38;
 }
 
 .recu2 {
-  border-width: 20px;
+  border-width: 10px;
   border-style: solid;
   border-color: #04BFAD;
 }
 
 .recu3 {
-  border-width: 20px;
+  border-width: 10px;
   border-style: solid;
   border-color: #148DD9;
 }
 
 .recu4 {
-  border-width: 20px;
+  border-width: 10px;
   border-style: solid;
   border-color: white;
+}
+
+.recu5 {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #042159;
+}
+
+.recu6 {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #F2E30F;
 }
 
 .nbot1 {
