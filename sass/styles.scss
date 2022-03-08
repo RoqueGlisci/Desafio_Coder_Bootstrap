@@ -7,21 +7,20 @@ html{
     box-sizing: border-box;
     body{
         background-image: url(../img/foto1.jpg);
-        background-color: $colourblue;
-        background-repeat: no-repeat;
+        background-color: map-get($mapaColores, 5);
+        background-repeat: repeat;
         background-position: center;
         background-size: center;
     }
 }
 
-
 header{
-    background-color: $colourLightblue;
+    background-color: map-get($mapaColores, 3);
     font-family: $fontF1;
     
     h1{
         font-family: $fontF1;
-        color: $colourWhite;        
+        color: map-get($mapaColores, 4);        
         font-size: $fontSizeH1;
         font-family: $fontF1;
     }
@@ -34,7 +33,7 @@ ul{
     border-bottom: $borderB;
     list-style:none;
     a{
-        color: $colourWhite;
+        color: map-get($mapaColores, 4);
         text-decoration:none;
         font-size: $fontSizeUl;
     }
@@ -42,13 +41,13 @@ ul{
 }
 
 h2{
-    color: $colourWhite;
+    color: map-get($mapaColores, 4);
     font-size: $fontSizeH2;
     font-family: $fontF1;
 }
 
 h3{
-    color: $colourWhite;
+    color: map-get($mapaColores, 4);
     font-size: $fontSizeH3;
     font-family: $fontF1;
 }
@@ -58,14 +57,19 @@ h3{
 }
 
 p{
-    color: $colourWhite;
+    color: map-get($mapaColores, 4);
     font-family: $fontF1;
     font-weight: 700;
     overflow: auto;
 }
 
+.p_box{
+    height: 300px;
+    width: auto;
+}
+
 label{
-    color: $colourWhite;
+    color: map-get($mapaColores, 4);
 }
 
 /* ---------------- Nav --------------------- */
@@ -81,23 +85,16 @@ label{
 // ----------------------Tabla-------------------------
 
 .tabla_info{
-    background-color: $colourblue;
+    background-color: map-get($mapaColores, 5);
     margin: 4rem auto 2rem auto;
     padding: 1rem;
     th{
-        color: $colourWhite;
+        color: map-get($mapaColores, 4);
         width: 20rem;
         height: 5rem;
         font-size: $fontSizeTH;
         font-family: $fontF1;
     }
-}
-
-/* ---------------------Noticias------------------------- */
-
-.card{
-    background-color: $colourblue;
-    border: $borderB;
 }
 
 /* --------------------Animaciones-------------------------- */
@@ -133,7 +130,7 @@ label{
     transition: all 1s;
     &:hover{
         border-radius: $borderR;
-        background-color: $colourRed;
+        background-color: map-get($mapaColores, 1);
     }   
 }
 
@@ -145,11 +142,11 @@ label{
     border-color: $recu;
 }
 
-
 @if $crear == "si"{
     @each $numero, $recu in $mapaColores{
         .recu#{$numero}{
             @include bordeColor(10px, solid, $recu);
+            background-color: map-get($mapaColores, 7);
         }
     }
 }
@@ -159,20 +156,13 @@ label{
     }
 }
 
-.nbot1{
-    background-color: map-get($mapaColores, 1);
-    
-}
-
 .nbot2{
     background-color: map-get($mapaColores, 2);
     
 }
 
-
-@media (max-width: 1300px){
+@media (max-width: 1500px){
     p{
-        font-size: $fontSizeP;
+        font-size: $fontSizeP;   
     }
 }
-
