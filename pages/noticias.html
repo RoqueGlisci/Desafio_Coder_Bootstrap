@@ -28,64 +28,127 @@
 
     <!-- Nav -->
     
-    <div class="container-fluid">
-        <nav class="row ">
-            <ul class="nav justify-content-around  mb-3 flex_res" >
-                <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="../index.html">Home</a></li>
-                <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="integrantes.html">About us</a></li>
-                <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="historia.html">History</a></li>
-                <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="noticias.html">News</a></li>
-                <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="contacto.html">Contacts</a></li>
-            </ul>
-        </nav>
-    </div>
+    <nav class="navbar navbar-light nav_c fixed-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand " href="#"><h3 class="">Menu</h2></a>
+            
+            <button class="navbar-toggler w_c" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end nav_c" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset w_c" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body h3">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        
+                        <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="../index.html">Home</a></li>
+                        <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="integrantes.html">About us</a></li>
+                        <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="historia.html">History</a></li>
+                        <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="noticias.html">News</a></li>
+                        <li class="list-inline-item p-3"><a class=" menu_ani p-2" href="contacto.html">Contacts</a></li>
+
+                    </ul>
+                    <form class="d-flex pt-4">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Subtitulo de la pagina -->
 
     <h2 class="text-center p-2">News</h2>
 
     <!-- Contenido -->
-    
-    <section>
-        <div class="container-fluid">
 
-            <div class="row">
 
-                <div class="col-md-12 col-xl-4">
+    <section class="">
+        <div class="container-fluid ">
 
-                    <div class="card m-4 pb-6 animate__animated animate__flipInY recu2">
-                        <img class="img-fluid"  src="https://resizer.glanacion.com/resizer/yMpL8Ynr83z2iYVHYyg7Plb1t0s=/879x586/smart/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/52OCRAG34RAZPLFF3U5PAHCIS4.jpg" alt=""> 
+            <!-- --------row 1--------- -->
+
+            <div class="row row justify-content-center"> 
+                
+                <div class="col-md-5 col-xl-4 col-xxl-3">
+
+                    <div class="card m-4 pb-6 animate__animated animate__flipInY recu">
+                        <img class="img-fluid rad"  src="https://resizer.glanacion.com/resizer/yMpL8Ynr83z2iYVHYyg7Plb1t0s=/879x586/smart/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/52OCRAG34RAZPLFF3U5PAHCIS4.jpg" alt=""> 
                         <div class="card-body ">
                             <h3 class="card-title">Microsoft to acquire Activision Blizzard</h3>
                             <p class="card-text p_box">
-                                REDMOND, Wash. and Santa Monica, Calif. – Jan. 18, 2022 – With three billion people actively playing games today, and fueled by a new generation steeped in the joys of interactive entertainment, gaming is now the largest and fastest-growing form of entertainment. Today, Microsoft Corp. (Nasdaq: MSFT) announced plans to acquire Activision Blizzard Inc. (Nasdaq: ATVI), a leader in game development and interactive entertainment content publisher. This acquisition will accelerate the growth in Microsoft’s gaming business across mobile, PC, console and cloud and will provide building blocks for the metaverse.
+                                REDMOND, Wash. and Santa Monica, Calif. – Jan. 18, 2022 – With three billion people actively playing games today, and fueled by a new generation steeped in the joys of interactive entertainment, gaming is now the largest and fastest-growing form of entertainment. Today, Microsoft Corp. 
+                                (Nasdaq: MSFT) announced plans to acquire Activision Blizzard Inc. (Nasdaq: ATVI), a leader in game development and interactive entertainment content publisher. This acquisition will accelerate the growth in Microsoft’s gaming business across mobile, PC, console and cloud and will provide building blocks for the metaverse.
+                                
                             </p>
                             <a href="https://news.microsoft.com/2022/01/18/microsoft-to-acquire-activision-blizzard-to-bring-the-joy-and-community-of-gaming-to-everyone-across-every-device/" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="col-md-12 col-xl-4">
+                <div class="col-md-5 col-xl-4 col-xxl-3">
 
-                    <div class="card m-4 pb-6 animate__animated animate__flipInY recu2">
+                    <div class="card m-4 pb-6 recu">
 
-                        <img class="img-fluid" src="https://cdn.vox-cdn.com/thumbor/BFINKu7Qf6UYdcQ0exCuvNH9FX4=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70590242/vpavic_220210_5030_0096.0.jpg" alt=""> 
+                        <img class="img-fluid rad" src="https://pyxis.nymag.com/v1/imgs/373/404/9e3740b1f89acddf57371699891a5dd1e0-eldenring.rhorizontal.w700.jpg" alt=""> 
+                        <div class="card-body">
+                            <h3 class="card-title pb-4">Elden Ring - Review</h3>
+                            <p class="card-text p_box">
+                                In my first session with Elden Ring, I crossed blades with a man named Margit the Fell Omen. He wielded a club about the same size as my character, and he could obliterate half my health bar with a mere glancing blow. My puny katana seemed to ricochet off his armor, and every advance I made was deftly nullified by a liquid-quick counter maneuver. I was lucky if I got to phase two of the fight, at which point Margit conjured a wicked sledgehammer made of pure light. He’d launch into the acrid sky above and crash down like a meteor slamming into the earth. Dodge a second too late and you’re toast.
+                            </p>
+                            <a href="https://www.vulture.com/2022/03/elden-ring-player-friendly.html" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-10 col-xl-4 col-xxl-3">
+
+                    <div class="card m-4 pb-6 animate__animated animate__flipInY recu">
+                        <img class="img-fluid rad" src="https://phantom-marca.unidadeditorial.es/62c93284b13e2718df3601c23f082023/resize/1320/f/jpg/assets/multimedia/imagenes/2022/02/16/16450148223649.jpg" alt=""> 
+                        <div class="card-body">
+                            <h3 class="card-title pb-1">Cyberpunk 2077 Fans Share Their Favorite Changes In Patch 1.5</h3>
+                            <p class="card-text p_box">
+                                At long last, Cyberpunk 2077 has received its next-gen upgrades in a surprise drop this morning, alongside a massive 1.5 patch for all versions. The patch contains a ton of new features of varying sizes and scopes, many of which are delighting the Cyberpunk community as they discover them.
+                            </p>
+                            <a href="https://www.ign.com/articles/cyberpunk-2077-fans-favorite-changes-patch" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- --------row 2--------- -->
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-5 col-xl-4 col-xxl-3">
+
+                    <div class="card m-4 pb-6 animate__animated animate__flipInY recu">
+
+                        <img class="img-fluid rad" src="https://cdn.vox-cdn.com/thumbor/BFINKu7Qf6UYdcQ0exCuvNH9FX4=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70590242/vpavic_220210_5030_0096.0.jpg" alt=""> 
 
                         <div class="card-body">
                             <h3 class="card-title ">New Steam Deck</h3>
                             <p class="card-text p_box">
                                 If you’re interested in a Steam Deck but haven’t reserved one yet, you might want to make a reservation sometime soon. Valve has updated the Steam Deck page to show that any reservations placed now won’t be able to actually make an order until sometime “after Q3 2022,” which means you shouldn’t expect to get one of the handheld gaming PCs of your own until at least October.
                             </p>
-                            <a href="https://www.theverge.com/2022/3/7/22965793/valve-steam-deck-reservation-q3-order-window-october-countries-expansion" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
+                            <a href="https://www.theverge.com/2022/3/7/22965793/valve-steam-deck-reservation-q3-order-window-october-countries-expansion" class=" btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-12 col-xl-4">
+                <div class="col-md-5 col-xl-4 col-xxl-3">
 
-                    <div class="card m-4 pb-6 animate__animated animate__flipInY recu2">
+                    <div class="card m-4 pb-6 animate__animated animate__flipInY recu">
 
-                        <img class="img-fluid"  src="https://pyxis.nymag.com/v1/imgs/453/f5c/9cdc5dc1c8226cf4a4f98adfc726c971f5-best-video-games-year-so-far-lede.rhorizontal.w700.jpg" alt=""> 
+                        <img class="img-fluid rad"  src="https://pyxis.nymag.com/v1/imgs/453/f5c/9cdc5dc1c8226cf4a4f98adfc726c971f5-best-video-games-year-so-far-lede.rhorizontal.w700.jpg" alt=""> 
 
                         <div class="card-body">
                             <h3 class="card-title ">BEST OF 2022 MAR. 3</h3>
@@ -97,12 +160,11 @@
                     </div>
                 </div>
 
+                <div class="col-md-10 col-xl-4 col-xxl-3 animate__animated animate__flipInY">
 
-                <div class="col-md-12 col-xl-4 animate__animated animate__flipInY">
+                    <div class="card m-4 pb-6 recu">
 
-                    <div class="card m-4 pb-6 recu2">
-
-                        <img class="img-fluid"  src="https://cdn.pocket-lint.com/r/s/970x/assets/images/160291-games-review-gran-turismo-7-review-screens-image11-pmxbzgnl63-jpg.webp" alt=""> 
+                        <img class="img-fluid rad"  src="https://cdn.pocket-lint.com/r/s/970x/assets/images/160291-games-review-gran-turismo-7-review-screens-image11-pmxbzgnl63-jpg.webp" alt=""> 
                         <div class="card-body">
                             <h3 class="card-title ">Gran Turismo 7 Review</h3>
                             <p class="card-text p_box">
@@ -113,39 +175,60 @@
                     </div>
                 </div>
 
-                <div class="col-md-12 col-xl-4 animate__animated animate__flipInY">
-
-                    <div class="card m-4 pb-6 recu2">
-
-                        <img class="img-fluid" src="https://pyxis.nymag.com/v1/imgs/373/404/9e3740b1f89acddf57371699891a5dd1e0-eldenring.rhorizontal.w700.jpg" alt=""> 
-                        <div class="card-body">
-                            <h3 class="card-title ">Elden Ring - Review</h3>
-                            <p class="card-text p_box">
-                                In my first session with Elden Ring, I crossed blades with a man named Margit the Fell Omen. He wielded a club about the same size as my character, and he could obliterate half my health bar with a mere glancing blow. My puny katana seemed to ricochet off his armor, and every advance I made was deftly nullified by a liquid-quick counter maneuver. I was lucky if I got to phase two of the fight, at which point Margit conjured a wicked sledgehammer made of pure light. He’d launch into the acrid sky above and crash down like a meteor slamming into the earth. Dodge a second too late and you’re toast.
-                            </p>
-                            <a href="https://www.vulture.com/2022/03/elden-ring-player-friendly.html" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12 col-xl-4 animate__animated animate__flipInY">
-
-                    <div class="card m-4 pb-6 recu2">
-
-                        <img class="img-fluid" src="https://media.vandal.net/i/1200x630/2-2022/2022215106012_1.jpg" alt=""> 
-
-                        <div class="card-body">
-                            <h3 class="card-title ">Review: Horizon Forbidden West</h3>
-                            <p class="card-text p_box">
-                                Successful sequels build on their predecessors in multiple ways – think Mass Effect 2, Assassin's Creed 2, and Uncharted 2. They all improve what came before them by conjuring up exciting new gameplay mechanics, developing characters through engaging stories, and switching up mission design to offer variety.  In other words, they take a solid base and combine with new elements to create more advanced bonds, much like an alloy… or in this case, an Aloy.
-                            </p>
-                            <a href="https://www.ign.com/articles/horizon-forbidden-west-review" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
+
+            <!-- --------row 3--------- -->
+
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-xl-4 col-xxl-3 animate__animated animate__flipInY">
+
+                    <div class="card m-4 pb-6 recu">
+
+                        <img class="img-fluid rad" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/12/10/16391550490182.jpg" alt=""> 
+                        <div class="card-body">
+                            <h3 class="card-title pb-4">Elden Ring - Review</h3>
+                            <p class="card-text p_box">
+                                While The Game Awards 2021 looks forward by featuring some of the biggest announcements and reveals in the world of video games, it is also a time to celebrate the incredible games that made this past year so special.
+                                From Game of the Year to Innovation in Accessibility to Best Narrative, there were a ton of categories that highlighted games of all types, all deserving recognition for what they've accomplished. However, only one game could win each category, and we've listed all the winners of The Game Awards 2021 below.
+                            </p>
+                            <a href="https://www.ign.com/articles/the-game-awards-2021-winners-revealed" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-xl-4 col-xxl-3 animate__animated animate__flipInY">
+
+                    <div class="card m-4 pb-6 recu">
+
+                        <img class="img-fluid rad" src="https://www.irrompibles.net/irrwp/wp-content/uploads/2022/02/Dying-Light-2-1.jpg" alt=""> 
+                        <div class="card-body">
+                            <h3 class="card-title pb-2">Dying Light 2 Stay Human REVIEW</h3>
+                            <p class="card-text p_box">
+                                Desarrollar un juego de mundo abierto puede ser uno de los objetivos más ambiciosos y difíciles en la industria del gaming y Techland sin dudas es un ejemplo muy claro de esto. Dying Light 2 se presentó en la E3 2018 y anticipó su lanzamiento para la primera mitad de 2020. Pero luego de varios problemas en su creación —la pandemia y el despido del guionista Chris Avallone debido a las acusaciones de abuso sexual— el juego se retrasó varias veces hasta su salida definitiva en febrero de 2022, casi dos años después de la fecha original. Todos estos imprevistos y sucesos
+                            </p>
+                            <a href="https://www.irrompibles.net/44707-dying-light-2-stay-human-review/" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10 col-xl-4 col-xxl-3 animate__animated animate__flipInY">
+
+                    <div class="card m-4 pb-6 recu">
+
+                        <img class="img-fluid rad " src="https://news.cdmarket.com.ar/wp-content/uploads/2021/12/FGqDsT7VgAIJojN.jpeg" alt=""> 
+                        <div class="card-body">
+                            <h3 class="card-title pb-2">Horizon Forbidden West Review</h3>
+                            <p class="card-text p_box">
+                                Horizon Forbidden West can be daunting in its size and scope. That feeling only grows as you uncover its map, collect gear to fill in its giant arsenal of weapons and armors, or unlock a huge number of special moves, skills, and passive buffs from its expansive, revamped skill tree
+                                compelling not because developer Guerrilla Games filled it with a huge amount of stuff to do, but because so much of that stuff is thoughtfully constructed and sometimes even emotionally engaging, instead of just feeling like items created to add as many map markers to the world as possible.
+                            </p>
+                            <a href="https://www.gamespot.com/reviews/horizon-forbidden-west-review/1900-6417826/" class="btn btn-primary rounded mx-auto d-block m-2 nbot2">news source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>        
 
     </section>
 

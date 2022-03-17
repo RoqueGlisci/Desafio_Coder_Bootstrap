@@ -12,42 +12,43 @@ html body {
 }
 
 header {
-  background-color: #148DD9;
+  background-color: rgba(0, 0, 0, 0.3);
   font-family: "Mochiy Pop P One", sans-serif;
+  padding-top: 4rem;
 }
 header h1 {
   font-family: "Mochiy Pop P One", sans-serif;
   color: white;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   font-family: "Mochiy Pop P One", sans-serif;
 }
 
 ul {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-family: "Mochiy Pop P One", sans-serif;
-  border-bottom: 10px solid black;
   list-style: none;
 }
 ul a {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 h2 {
   color: white;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-family: "Mochiy Pop P One", sans-serif;
 }
 
 h3 {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-family: "Mochiy Pop P One", sans-serif;
 }
 
-.recu {
-  border: 10px solid black;
+h5 {
+  color: white;
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 
 p {
@@ -55,10 +56,11 @@ p {
   font-family: "Mochiy Pop P One", sans-serif;
   font-weight: 700;
   overflow: auto;
+  font-size: 0.8rem;
 }
 
 .p_box {
-  height: 300px;
+  height: 200px;
   width: auto;
 }
 
@@ -66,24 +68,44 @@ label {
   color: white;
 }
 
-/* ---------------- Nav --------------------- */
-@media (max-width: 1200px) {
-  .flex_res {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.recu {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
 }
-.tabla_info {
+
+.rad {
+  border-radius: 3rem;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------- Nav --------------------- */
+.nav_c {
   background-color: #042159;
-  margin: 4rem auto 2rem auto;
+}
+.nav_c .w_c {
+  background-color: white;
+}
+
+.tabla_info {
+  margin: 4rem auto 4rem auto;
   padding: 1rem;
 }
 .tabla_info th {
   color: white;
-  width: 20rem;
-  height: 5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Mochiy Pop P One", sans-serif;
 }
 
@@ -102,7 +124,7 @@ label {
     background-color: #148DD9;
   }
   25% {
-    background-color: #F20F38;
+    background-color: #f20f39;
   }
   50% {
     background-color: #F2E30F;
@@ -115,70 +137,77 @@ label {
   }
 }
 .menu_ani {
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .menu_ani:hover {
-  border-radius: 45%;
-  background-color: #F20F38;
+  color: #f20f39;
+}
+
+.c_ani {
+  transition: all 0.5s;
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  background-color: rgba(4, 191, 173, 0.6);
+}
+.c_ani:hover {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #148DD9;
+  padding: 3%;
 }
 
 .recu1 {
-  border-width: 10px;
-  border-style: solid;
-  border-color: #F20F38;
-  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  background-color: #f20f39;
+  background-color: #f20f39;
 }
 
 .recu2 {
-  border-width: 10px;
-  border-style: solid;
-  border-color: #04BFAD;
-  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  background-color: #04BFAD;
+  background-color: #04BFAD;
 }
 
 .recu3 {
-  border-width: 10px;
-  border-style: solid;
-  border-color: #148DD9;
-  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  background-color: #148DD9;
+  background-color: #148DD9;
 }
 
 .recu4 {
-  border-width: 10px;
-  border-style: solid;
-  border-color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  background-color: white;
+  background-color: white;
 }
 
 .recu5 {
-  border-width: 10px;
-  border-style: solid;
-  border-color: #042159;
-  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  background-color: #042159;
+  background-color: #042159;
 }
 
 .recu6 {
-  border-width: 10px;
-  border-style: solid;
-  border-color: #F2E30F;
-  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  background-color: #F2E30F;
+  background-color: #F2E30F;
 }
 
 .recu7 {
-  border-width: 10px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
   background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.recu8 {
+  border-radius: 3rem;
+  background-color: rgba(4, 191, 173, 0.6);
+  background-color: rgba(4, 191, 173, 0.6);
 }
 
 .nbot2 {
   background-color: #04BFAD;
-}
-
-@media (max-width: 1500px) {
-  p {
-    font-size: 0.8rem;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

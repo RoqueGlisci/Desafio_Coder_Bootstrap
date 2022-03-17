@@ -15,22 +15,23 @@ html{
 }
 
 header{
-    background-color: map-get($mapaColores, 3);
+    background-color: map-get($mapaColores, 7);
     font-family: $fontF1;
-    
+    padding-top: 4rem;
     h1{
         font-family: $fontF1;
         color: map-get($mapaColores, 4);        
         font-size: $fontSizeH1;
         font-family: $fontF1;
+        
     }
 }
+
 
 ul{
 
     font-size: $fontSizeUl;
     font-family: $fontF1;
-    border-bottom: $borderB;
     list-style:none;
     a{
         color: map-get($mapaColores, 4);
@@ -52,8 +53,9 @@ h3{
     font-family: $fontF1;
 }
 
-.recu{
-    border: $borderB;
+h5{
+    color: map-get($mapaColores, 4);
+    font-family: $fontF1;
 }
 
 p{
@@ -61,10 +63,11 @@ p{
     font-family: $fontF1;
     font-weight: 700;
     overflow: auto;
+    font-size: $fontSizeP;
 }
 
 .p_box{
-    height: 300px;
+    height: 200px;
     width: auto;
 }
 
@@ -72,28 +75,49 @@ label{
     color: map-get($mapaColores, 4);
 }
 
+.recu{
+    background-color: map-get($mapaColores, 7 );
+    border-radius: 3rem;
+}
+
+.rad{
+   border-radius: 3rem;     
+        
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 /* ---------------- Nav --------------------- */
 
-@media (max-width: 1200px) {
-    .flex_res{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.nav_c{
+    background-color: map-get($mapaColores, 5);
+    .w_c{
+        background-color: white;
     }
 }
 
 // ----------------------Tabla-------------------------
 
 .tabla_info{
-    background-color: map-get($mapaColores, 5);
-    margin: 4rem auto 2rem auto;
+    margin: 4rem auto 4rem auto;
     padding: 1rem;
     th{
         color: map-get($mapaColores, 4);
-        width: 20rem;
-        height: 5rem;
         font-size: $fontSizeTH;
         font-family: $fontF1;
+        
     }
 }
 
@@ -127,26 +151,42 @@ label{
 }
 
 .menu_ani{
-    transition: all 1s;
+    transition: all 0.5s;
     &:hover{
-        border-radius: $borderR;
-        background-color: map-get($mapaColores, 1);
+        color: map-get($mapaColores, 1);
     }   
+}
+
+.c_ani{
+    transition: all 0.5s;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    background-color:  map-get($mapaColores, 8);
+    &:hover{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color:  map-get($mapaColores, 3);
+        padding: 3%;
+        
+    }  
 }
 
 // ----------------------sass II-----------------------------------
 
-@mixin bordeColor($ancho, $tipo, $recu) {
-    border-width: $ancho;
-    border-style: $tipo;
-    border-color: $recu;
+
+@mixin bordeColor($r, $recu) {
+    border-radius: $r;
+    background-color: $recu;
 }
+
 
 @if $crear == "si"{
     @each $numero, $recu in $mapaColores{
         .recu#{$numero}{
-            @include bordeColor(10px, solid, $recu);
-            background-color: map-get($mapaColores, 7);
+            @include bordeColor( 3rem, $recu);
+            background-color: map-get($mapaColores, $numero);
         }
     }
 }
@@ -161,8 +201,3 @@ label{
     
 }
 
-@media (max-width: 1500px){
-    p{
-        font-size: $fontSizeP;   
-    }
-}
