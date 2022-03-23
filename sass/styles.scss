@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap');
 
 
+// ------------global---------
 html{
     font-size: 62,5%;
     box-sizing: border-box;
@@ -77,12 +78,11 @@ label{
 
 .recu{
     background-color: map-get($mapaColores, 7 );
-    border-radius: 3rem;
+    border-radius: $borderR;
 }
 
 .rad{
-   border-radius: 3rem;     
-        
+   border-radius: $borderR;     
 }
 
 .embed-container {
@@ -104,7 +104,7 @@ label{
 .nav_c{
     background-color: map-get($mapaColores, 5);
     .w_c{
-        background-color: white;
+        background-color: map-get($mapaColores, 4);
     }
 }
 
@@ -121,59 +121,7 @@ label{
     }
 }
 
-/* --------------------Animaciones-------------------------- */
-
-.footer_ani{
-    background-color: map-get($mapaColores, 3);
-    animation-name: un_efecto;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-delay: 4s;
-    animation-duration: alternate;
-}
-
-@keyframes un_efecto{
-    0%{
-        background-color: map-get($mapaColores, 3);
-    }
-    25%{
-        background-color: map-get($mapaColores, 1);
-    }
-    50%{
-        background-color: map-get($mapaColores, 6);
-    }
-    75%{
-        background-color: map-get($mapaColores, 2);
-    }
-    100%{
-        background-color: map-get($mapaColores, 3);
-    }
-}
-
-.menu_ani{
-    transition: all 0.5s;
-    &:hover{
-        color: map-get($mapaColores, 1);
-    }   
-}
-
-.c_ani{
-    transition: all 0.5s;
-    width: 80px;
-    height: 80px;
-    border-radius: 30%;
-    background-color:  map-get($mapaColores, 8);
-    &:hover{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-color:  map-get($mapaColores, 3);
-        padding: 3%;
-        
-    }  
-}
-
-// ----------------------sass II-----------------------------------
+// ----------------------color selection-----------------------------------
 
 
 @mixin bordeColor($r, $recu) {
@@ -201,13 +149,194 @@ label{
     
 }
 
-// ------------------------------------------
+/* --------------------Animaciones-------------------------- */
 
-.v-line{
-   
- border-left: 0.5rem solid white;
- height:100%;
- height: 20rem;
- 
+.menu_ani{
+    transition: all 0.5s;
+    &:hover{
+        color: map-get($mapaColores, 1);
+    }   
 }
+
+.c_ani{
+    transition: all 0.5s;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    background-color:  map-get($mapaColores, 8);
+    &:hover{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color:  map-get($mapaColores, 3);
+        padding: 3%;
+        
+    }  
+}
+
+
+// --------------------History Animaciones----------------------
+
+@media (max-width: 1675px){
+    .box{
+        font-size: $fontSizeP6;
+   }
+}
+
+@media (max-width: 768px){
+    .pad_1{
+        padding-bottom: $padding8;
+        padding-left: $padding2;
+        padding-right: $padding2;
+    }
+    .pad_2{
+        padding-top: $padding2;
+    }
+}   
+
+
+
+.recu_ani{
+    border: 0.5rem solid map-get($mapaColores, 3);
+    
+    animation-name: efecto2;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-duration: alternate;
+}
+
+
+@keyframes efecto2{
+    0%{
+        border: 0.5rem solid map-get($mapaColores, 3);
+        
+    }
+    25%{
+        border: 0.5rem solid map-get($mapaColores, 1);
+        
+    }
+    50%{
+        border: 0.5rem solid map-get($mapaColores, 6);
+        
+    }
+    75%{
+        border: 0.5rem solid map-get($mapaColores, 2);
+        ;
+    }
+    100%{
+        border: 0.5rem solid map-get($mapaColores, 3);
+        
+    }
+}
+
+@media (min-width: 768px){
+    .v_line{
+        border-left: 0.5rem solid map-get($mapaColores, 3);
+        height: 20rem;
+        
+        animation-name: efecto1;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-delay: 4s;
+        animation-duration: alternate;
+    }
+} 
+
+
+@keyframes efecto1{
+    0%{
+        border-left: 0.5rem solid map-get($mapaColores, 3);
+        
+    }
+    25%{
+        border-left: 0.5rem solid map-get($mapaColores, 1);
+        
+    }
+    50%{
+        border-left: 0.5rem solid map-get($mapaColores, 6);
+        
+    }
+    75%{
+        border-left: 0.5rem solid map-get($mapaColores, 2);
+        
+    }
+    100%{
+        border-left: 0.5rem solid map-get($mapaColores, 3);
+        
+    }
+}
+
+// ----------footer Animaciones-------------
+
+.marg{
+    background-color: map-get($mapaColores, 7);
+    height: 6rem;
+
+}
+
+.c_ani_color{
+    width: 55px;
+    height: 55px;
+    border-radius: 30%;
+    background-color:  map-get($mapaColores, 3);
+    padding: 3%;
+
+    animation-name: efecto2;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-duration: alternate;
+}
+
+@keyframes efecto2{
+    0%{
+        
+        background-color:  map-get($mapaColores, 3);
+    }
+    25%{
+        
+        background-color:  map-get($mapaColores, 1);
+    }
+    50%{
+        
+        background-color:  map-get($mapaColores, 6);
+    }
+    75%{
+        
+        background-color:  map-get($mapaColores, 2);
+    }
+    100%{
+        
+        background-color:  map-get($mapaColores, 3);
+    }
+}
+
+
+
+// body {
+//   margin: 0;
+// }
+// .sect {
+//   width: 100%;
+//   min-height: 500px;
+// }
+
+// #sect2 {
+//   background-color: #dddddd7d;
+//   color: #333;
+// }
+// #sect1 {
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// video {
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   height: 250%;
+// //   width: 50%;
+//   z-index: -1;
+// }
 

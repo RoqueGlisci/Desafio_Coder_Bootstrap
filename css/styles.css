@@ -12,7 +12,7 @@ html body {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   font-family: "Mochiy Pop P One", sans-serif;
   padding-top: 4rem;
 }
@@ -69,7 +69,7 @@ label {
 }
 
 .recu {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3rem;
 }
 
@@ -107,55 +107,6 @@ label {
   color: white;
   font-size: 1rem;
   font-family: "Mochiy Pop P One", sans-serif;
-}
-
-/* --------------------Animaciones-------------------------- */
-.footer_ani {
-  background-color: #148DD9;
-  animation-name: un_efecto;
-  animation-iteration-count: infinite;
-  animation-duration: 4s;
-  animation-delay: 4s;
-  animation-duration: alternate;
-}
-
-@keyframes un_efecto {
-  0% {
-    background-color: #148DD9;
-  }
-  25% {
-    background-color: #f20f39;
-  }
-  50% {
-    background-color: #F2E30F;
-  }
-  75% {
-    background-color: #04BFAD;
-  }
-  100% {
-    background-color: #148DD9;
-  }
-}
-.menu_ani {
-  transition: all 0.5s;
-}
-.menu_ani:hover {
-  color: #f20f39;
-}
-
-.c_ani {
-  transition: all 0.5s;
-  width: 80px;
-  height: 80px;
-  border-radius: 30%;
-  background-color: rgba(4, 191, 173, 0.6);
-}
-.c_ani:hover {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #148DD9;
-  padding: 3%;
 }
 
 .recu1 {
@@ -196,8 +147,8 @@ label {
 
 .recu7 {
   border-radius: 3rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .recu8 {
@@ -210,10 +161,133 @@ label {
   background-color: #04BFAD;
 }
 
-.v-line {
-  border-left: 0.5rem solid white;
-  height: 100%;
-  height: 20rem;
+/* --------------------Animaciones-------------------------- */
+.menu_ani {
+  transition: all 0.5s;
+}
+.menu_ani:hover {
+  color: #f20f39;
+}
+
+.c_ani {
+  transition: all 0.5s;
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  background-color: rgba(4, 191, 173, 0.6);
+}
+.c_ani:hover {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #148DD9;
+  padding: 3%;
+}
+
+@media (max-width: 1675px) {
+  .box {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .pad_1 {
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .pad_2 {
+    padding-top: 2rem;
+  }
+}
+.recu_ani {
+  border: 0.5rem solid #148DD9;
+  animation-name: efecto2;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-duration: alternate;
+}
+
+@keyframes efecto2 {
+  0% {
+    border: 0.5rem solid #148DD9;
+  }
+  25% {
+    border: 0.5rem solid #f20f39;
+  }
+  50% {
+    border: 0.5rem solid #F2E30F;
+  }
+  75% {
+    border: 0.5rem solid #04BFAD;
+  }
+  100% {
+    border: 0.5rem solid #148DD9;
+  }
+}
+@media (min-width: 768px) {
+  .v_line {
+    border-left: 0.5rem solid #148DD9;
+    height: 20rem;
+    animation-name: efecto1;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-duration: alternate;
+  }
+}
+@keyframes efecto1 {
+  0% {
+    border-left: 0.5rem solid #148DD9;
+  }
+  25% {
+    border-left: 0.5rem solid #f20f39;
+  }
+  50% {
+    border-left: 0.5rem solid #F2E30F;
+  }
+  75% {
+    border-left: 0.5rem solid #04BFAD;
+  }
+  100% {
+    border-left: 0.5rem solid #148DD9;
+  }
+}
+.marg {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 6rem;
+}
+
+.c_ani_color {
+  width: 55px;
+  height: 55px;
+  border-radius: 30%;
+  background-color: #148DD9;
+  padding: 3%;
+  animation-name: efecto2;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-duration: alternate;
+}
+
+@keyframes efecto2 {
+  0% {
+    background-color: #148DD9;
+  }
+  25% {
+    background-color: #f20f39;
+  }
+  50% {
+    background-color: #F2E30F;
+  }
+  75% {
+    background-color: #04BFAD;
+  }
+  100% {
+    background-color: #148DD9;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
