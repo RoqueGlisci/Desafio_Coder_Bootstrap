@@ -289,14 +289,14 @@ label {
   border-radius: 30%;
   background-color: #148DD9;
   padding: 3%;
-  animation-name: efecto2;
+  animation-name: efecto3;
   animation-iteration-count: infinite;
   animation-duration: 4s;
   animation-delay: 4s;
   animation-duration: alternate;
 }
 
-@keyframes efecto2 {
+@keyframes efecto3 {
   0% {
     background-color: #148DD9;
   }
