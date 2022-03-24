@@ -1,8 +1,9 @@
 @import 'variables';
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 // ------------global---------
+
 html{
     font-size: 62,5%;
     box-sizing: border-box;
@@ -24,10 +25,36 @@ header{
         color: map-get($mapaColores, 4);        
         font-size: $fontSizeH1;
         font-family: $fontF1;
-        
+  
     }
 }
 
+// ----------Titulo principal------------
+
+.space{
+    height: 25rem;
+    .f_size{
+        font-size: $fontSizeH1;
+    }
+}  
+.f1{
+    color: map-get($mapaColores, 4);
+    font-size: 8rem; 
+    font-family: $fontF1;
+    padding-top: $padding12;  
+    padding-bottom: $padding15;
+}
+@media (max-width: 540px){
+    .f1{
+        color: map-get($mapaColores, 4);
+        font-size: 5rem; 
+        font-family: $fontF1;
+        padding-top: $padding12;  
+        padding-bottom: $padding8;
+    }
+}
+
+// ----------------------------------------
 
 ul{
 
@@ -313,30 +340,17 @@ label{
 }
 
 
-
-// body {
-//   margin: 0;
-// }
-// .sect {
-//   width: 100%;
-//   min-height: 500px;
-// }
-
-// #sect2 {
-//   background-color: #dddddd7d;
-//   color: #333;
-// }
-// #sect1 {
-//   position: relative;
-//   overflow: hidden;
-// }
-
-// video {
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   height: 250%;
-// //   width: 50%;
-//   z-index: -1;
-// }
-
+// ---------------video titulo-------------
+ 
+video {  
+    
+    min-width:100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;   
+    top: 50%;
+    left: 49.5%;
+    transform: translateX(-50%) translateY(-50%);  
+    z-index: -100;
+}

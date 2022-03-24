@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   font-size: 62, 5%;
   box-sizing: border-box;
@@ -13,19 +13,43 @@ html body {
 
 header {
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding-top: 4rem;
 }
 header h1 {
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 3.2rem;
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
+.space {
+  height: 25rem;
+}
+.space .f_size {
+  font-size: 3.2rem;
+}
+
+.f1 {
+  color: white;
+  font-size: 8rem;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 12rem;
+  padding-bottom: 15rem;
+}
+
+@media (max-width: 540px) {
+  .f1 {
+    color: white;
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+  }
+}
 ul {
   font-size: 1.2rem;
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
 }
 ul a {
@@ -37,23 +61,23 @@ ul a {
 h2 {
   color: white;
   font-size: 2.2rem;
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
   color: white;
   font-size: 1.4rem;
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h5 {
   color: white;
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
   color: white;
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   overflow: auto;
   font-size: 0.8rem;
@@ -106,7 +130,7 @@ label {
 .tabla_info th {
   color: white;
   font-size: 1rem;
-  font-family: "Mochiy Pop P One", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .recu1 {
@@ -288,6 +312,17 @@ label {
   100% {
     background-color: #148DD9;
   }
+}
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 49.5%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
 }
 
 /*# sourceMappingURL=styles.css.map */
